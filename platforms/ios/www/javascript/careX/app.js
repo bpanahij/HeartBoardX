@@ -14,8 +14,7 @@ var Passport = angular.module('CareX', [
         }).when('/medications', {
           templateUrl: 'partials/admin/medications.html',
           controller: 'MedicationsCtrl'
-        })
-        .when('/discharge/record', {
+        }).when('/discharge/record', {
           templateUrl: 'partials/admin/record.html',
           controller: 'RecordCtrl'
         }).when('/discharges', {
