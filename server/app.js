@@ -13,6 +13,7 @@ var express = require('express')
  */
 var users = require('./routes/user')
   , events = require('./routes/events')
+  , discharges = require('./routes/discharges')
   , index = require('./routes/index');
 /**
  * Connecting to the database
@@ -41,6 +42,7 @@ app.use(express.static(path.join(__dirname, '/../www')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/events', events);
+app.use('/discharges', discharges);
 http.createServer(app).listen(app.get('port'), function() {
   console.log(config.service + ' listening on port ' + config.port);
 });
