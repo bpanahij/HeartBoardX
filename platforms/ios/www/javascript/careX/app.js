@@ -26,6 +26,9 @@ var Passport = angular.module('CareX', [
         }).when('/discharge/record', {
           templateUrl: 'partials/admin/record.html',
           controller: 'RecordCtrl'
+        }).when('/discharges', {
+          templateUrl: 'partials/admin/discharges.html',
+          controller: 'DischargesCtrl'
         }).otherwise({
           redirectTo: '/'
         });

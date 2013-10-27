@@ -11,6 +11,7 @@ var DischargeSchema = new mongoose.Schema({
     lat: Number,
     lng: Number
   },
-  notes: String
+  notes: String,
+  date: { type: Date, default: Date.now }
 });
 module.exports = mongoose.model("Discharge", DischargeSchema);
