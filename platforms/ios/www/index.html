@@ -16,24 +16,6 @@
 <body>
 <div class="overlay"></div>
 <div id="wrap" class="boxed"></div>
-<header id="header"
-<div class="top-bar">
-  <div class="container clearfix">
-    <div class="slidedown">
-      <div class="eight columns">
-        <div class="phone-mail">
-          <a><i class="icon-phone"></i>Phone : +415-310-4985</a><a href="info@website.com"><i class="icon-envelope-alt"></i>Mail : brian@pjohnson.info</a>
-        </div>
-      </div>
-      <div class="eight columns">
-        <div class="social">
-          <a href="#"><i class="social_icon-twitter s-14"></i></a><a href="#"><i class="social_icon-facebook s-18"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</header>
 <div id="main" ng-view></div>
 <script type="text/javascript" src="phonegap.js"></script>
 <script type="text/javascript" src="javascript/index.js"></script>
@@ -44,6 +26,7 @@
 <script src="javascript/libs/angular/angular-resource.min.js"></script>
 <script src="javascript/libs/angular/angular-cookies.min.js"></script>
 <script src="javascript/libs/angular/angular-webstorage.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 
 <script src="javascript/libs/underscore.js"></script>
 <script src="javascript/libs/jquery-1.9.1.min.js"></script>
@@ -71,6 +54,7 @@
 <script src="javascript/careX/services/UserService.js"></script>
 <script src="javascript/careX/services/ArkService.js"></script>
 <script src="javascript/careX/services/EventService.js"></script>
+<script src="javascript/careX/services/DischargeService.js"></script>
 <!-- Controllers-->
 <script src="javascript/careX/controllers.js"></script>
 <script src="javascript/careX/controllers/EventCtrl.js"></script>

@@ -5,7 +5,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var DischargeSchema = new mongoose.Schema({
-  videoURL: String,
+  videoSrc: String,
   locationName: String,
   geocode: {
     lat: Number,

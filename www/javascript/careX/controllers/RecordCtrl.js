@@ -29,7 +29,6 @@ angular.module('CareX.controllers').controller('RecordCtrl', [
       // start video capture
       navigator.device.capture.captureVideo($scope.captureSuccess, $scope.captureError);
     };
-    $scope.discharge.videoSrc = 'asdasdasd';
     $scope.$watch('details', function() {
       if (_.isUndefined($scope.details)) {
         return;
