@@ -11,12 +11,12 @@ angular.module('CareX.controllers').controller('MedicationCtrl', [
     };
     $scope.onSuccessPill = function(imageURI) {
       alert(imageURI);
-      $scope.medication.bottleImageSrc = imageURI;
+      $scope.medication.pillImageSrc = imageURI;
       $scope.$apply();
     }
     $scope.onSuccessBottle = function(imageURI) {
       alert(imageURI);
-      $scope.medication.pillImageSrc = imageURI;
+      $scope.medication.bottleImageSrc = imageURI;
       $scope.$apply();
     }
     $scope.onFail = function(message) {
