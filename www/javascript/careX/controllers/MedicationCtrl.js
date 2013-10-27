@@ -10,12 +10,10 @@ angular.module('CareX.controllers').controller('MedicationCtrl', [
       $location.path('/')
     };
     $scope.onSuccessPill = function(imageURI) {
-      alert(imageURI);
       $scope.medication.pillImageSrc = imageURI;
       $scope.$apply();
     }
     $scope.onSuccessBottle = function(imageURI) {
-      alert(imageURI);
       $scope.medication.bottleImageSrc = imageURI;
       $scope.$apply();
     }

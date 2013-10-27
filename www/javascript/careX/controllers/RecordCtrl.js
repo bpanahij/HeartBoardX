@@ -12,7 +12,6 @@ angular.module('CareX.controllers').controller('RecordCtrl', [
     };
     // capture callback
     $scope.captureSuccess = function(mediaFiles) {
-      alert('success');
       var i, path, len;
       for(i = 0, len = mediaFiles.length; i < len; i += 1) {
         path = mediaFiles[i].fullPath;

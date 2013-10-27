@@ -41,7 +41,6 @@ angular.module('CareX.controllers').controller('EventCtrl', [
           long: $scope.details.geometry.location.lng()
         }
         $scope.event.locationName = $scope.details.formatted_address;
-        console.log($scope.event);
       }
     });
     if (eventId != 0)

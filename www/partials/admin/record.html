@@ -15,7 +15,7 @@
   <button ng-click="video()" class="button color large">Take Video</button>
 </div>
 <video width="100%" height="240" id="sampleMovie" src="{{discharge.videoSrc}}" controls></video>
-<div ng-show="!discharge.videoSrc" class="sixteen columns tables-column form-elements">
+<div class="sixteen columns tables-column form-elements">
   <ul class="list">
     <li>
       <input style="font-size: 2em;" ng-google-auto-complete="discharge.locationName" details="details" options="options" type="text">
