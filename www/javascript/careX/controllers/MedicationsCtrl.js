@@ -1,4 +1,4 @@
-angular.module('CareX.controllers').controller('DischargesCtrl', [
+angular.module('CareX.controllers').controller('MedicationsCtrl', [
   '$scope', '$location', 'MedicationService', function($scope, $location, MedicationService) {
     "use strict";
     $scope.discharges = [];
