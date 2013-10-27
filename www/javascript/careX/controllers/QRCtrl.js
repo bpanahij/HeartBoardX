@@ -22,4 +22,5 @@ angular.module('CareX.controllers').controller('QRCtrl', [
       });
       $('#qrcode img').css({width: '100%'});
     };
+    $scope.generateQRCode();
   }]);
