@@ -8,19 +8,7 @@ var Passport = angular.module('CareX', [
       $routeProvider.when('/', {
         templateUrl: 'partials/admin/setup.html',
         controller: 'SetupCtrl'
-      }).when('/admin/events', {
-          templateUrl: 'partials/admin/events.html',
-          controller: 'EventsCtrl'
-        }).when('/admin/event/:eventId', {
-          templateUrl: 'partials/admin/event.html',
-          controller: 'EventCtrl'
-        }).when('/event/:eventId', {
-          templateUrl: 'partials/eventQR.html',
-          controller: 'EventQRCtrl'
-        }).when('/ev/:eventId', {
-          templateUrl: 'partials/lead/lead.html',
-          controller: 'LeadCtrl'
-        }).when('/medication/add', {
+      }).when('/medication/add', {
           templateUrl: 'partials/admin/medication.html',
           controller: 'MedicationCtrl'
         }).when('/discharge/record', {
@@ -29,6 +17,9 @@ var Passport = angular.module('CareX', [
         }).when('/discharges', {
           templateUrl: 'partials/admin/discharges.html',
           controller: 'DischargesCtrl'
+        }).when('/qrcode', {
+          templateUrl: 'partials/admin/qrcode.html',
+          controller: 'QRCtrl'
         }).otherwise({
           redirectTo: '/'
         });
