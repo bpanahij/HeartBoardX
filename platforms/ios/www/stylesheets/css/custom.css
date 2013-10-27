@@ -133,3 +133,13 @@
 #main {
     margin-top: 30px;
 }
+
+.pillStyle {
+    width: 100px;
+    border: 1px solid black;
+}
+
+.bottleStyle {
+    width: 200px;
+    border: 1px solid black;
+}

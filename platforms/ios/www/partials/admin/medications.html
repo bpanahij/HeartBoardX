@@ -1,0 +1,30 @@
+<div>
+  <div class="sixteen columns menuBar">
+    <i ng-click="back()" class="icon-chevron-left"> Back to List</i>
+    <i class="icon-align-justify largeIcon"></i>
+  </div>
+</div>
+<div class="page-title bottom-2">
+  <div class="container clearfix sidebar">
+    <div class="sixteen columns">
+      <h3 class="nine columns" style="text-align: center;">My Medications</h3>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div ng-repeat="medication in medications">
+    <div class="sixteen columns">
+      <img width="100%" height="150" src="{{medication.pillImageSrc}}">
+      <img width="100%" height="150" src="{{medication.bottleImageSrc}}">
+    </div>
+    <div class="two-thirds column">
+      <i class="icon-map-marker"></i> <span ng-bind="medication.locationName"></span>
+    </div>
+    <div class="one-third column">
+      <span ng-bind="medication.date"></span>
+    </div>
+    <div class="sixteen columns">
+      <p ng-bind="medication.notes"></p>
+    </div>
+  </div>
+</div>

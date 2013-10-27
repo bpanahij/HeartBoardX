@@ -11,9 +11,20 @@
     </div>
   </div>
 </div>
-<div class="four columns tables-column">
-  <button ng-click="snap()" class="button color large">Snap Photo</button>
-</div>
 <div>
-  <img ng-src="{{imageSrc}}">
+  <img ng-click="snapBottle()" ng-src="{{medication.bottleImageSrc}}" class="two-thirds column bottleStyle">
+  <img ng-click="snapPill()" ng-src="{{medication.pillImageSrc}}" class="one-third column pillStyle">
+</div>
+<div class="sixteen columns tables-column form-elements">
+  <ul class="list">
+    <li>
+      <input style="font-size: 2em;" ng-google-auto-complete="medication.locationName" details="details" options="options" type="text">
+    </li>
+    <li>
+      <textarea ng-bind="medication.notes" style="font-size:3em;"></textarea>
+    </li>
+    <li>
+      <button ng-click="save()" class="button medium color">Save</button>
+    </li>
+  </ul>
 </div>

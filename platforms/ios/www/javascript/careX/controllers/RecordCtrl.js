@@ -44,7 +44,6 @@ angular.module('CareX.controllers').controller('RecordCtrl', [
     {
       var discharge = new DischargeService($scope.discharge);
       discharge.$save(function(err, res) {
-        console.log(err, res);
         $location.path('/discharges')
       });
     }
