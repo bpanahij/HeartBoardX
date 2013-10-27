@@ -1,0 +1,31 @@
+<div ng-show="!preview" class="page-title" style="padding: 0px !important;">
+  <div class="container clearfix sidebar">
+    <i ng-click="newEvent()" class="icon-plus-sign pull-right" style="font-size: 20px"> New Task</i>
+    <i ng-click="myEvents()" class="icon-list pull-right" style="font-size: 20px; margin-right:5px;"> My Tasks</i>
+  </div>
+</div>
+<div ng-show="!preview" class="four columns tables-column">
+  <div class="header">
+    <h3>Create Task</h3>
+  </div>
+  <ul class="list">
+    <li class="eventField"><input ng-model="event.title" type="text" placeholder="Name your event"></li>
+    <li class="eventField">
+      <select ng-model="event.frequency" ng-options="frequency.days as frequency.label for frequency in frequencies"></select>
+    </li>
+    <li ng-bind="event.locationName" class="eventField"></li>
+    <li class="eventField">
+      <input ng-google-auto-complete="event.geocode" details="details" options="options" type="text">
+    </li>
+    <li class="eventField">
+      <select ng-model="event.eventType" ng-options="eventType for eventType in eventTypes"></select>
+    </li>
+  </ul>
+  <div class="footer">
+    <button ng-click="publish()" class="button small color">Publish</button>
+    <button ng-click="togglePreview()" ng-bind="publishLabel" class="button small color">Preview</button>
+  </div>
+</div>
+<div ng-show="preview" ng-include="previewTemplate">
+
+</div>
