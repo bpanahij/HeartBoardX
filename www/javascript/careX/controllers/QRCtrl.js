@@ -4,14 +4,10 @@ angular.module('CareX.controllers').controller('QRCtrl', [
     "use strict";
     $scope.eventId = $routeParams.eventId;
     $scope.event = {};
-    $scope.getEvent = function()
-    {
-      EventService.get({_id: $scope.eventId}, function(event)
-      {
-        $scope.event = event;
-        $scope.generateQRCode();
-      });
+    $scope.back = function(menu) {
+      $location.path('/')
     };
+
     $scope.generateQRCode = function()
     {
       var qrcodeEl = document.getElementById("qrcode");
@@ -26,5 +22,4 @@ angular.module('CareX.controllers').controller('QRCtrl', [
       });
       $('#qrcode img').css({width: '100%'});
     };
-    $scope.getEvent();
   }]);
