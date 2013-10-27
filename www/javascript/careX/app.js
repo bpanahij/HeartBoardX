@@ -11,7 +11,11 @@ var Passport = angular.module('CareX', [
       }).when('/medication/add', {
           templateUrl: 'partials/admin/medication.html',
           controller: 'MedicationCtrl'
-        }).when('/discharge/record', {
+        }).when('/medications', {
+          templateUrl: 'partials/admin/medications.html',
+          controller: 'MedicationsCtrl'
+        })
+        .when('/discharge/record', {
           templateUrl: 'partials/admin/record.html',
           controller: 'RecordCtrl'
         }).when('/discharges', {

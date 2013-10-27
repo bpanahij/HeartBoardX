@@ -14,6 +14,7 @@ var express = require('express')
 var users = require('./routes/user')
   , events = require('./routes/events')
   , discharges = require('./routes/discharges')
+  , medications = require('./routes/medications')
   , index = require('./routes/index');
 /**
  * Connecting to the database
@@ -43,6 +44,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/events', events);
 app.use('/discharges', discharges);
+app.use('/medications', medications);
 http.createServer(app).listen(app.get('port'), function() {
   console.log(config.service + ' listening on port ' + config.port);
 });
